@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>语音助手</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>语音助手</h1>
+    <div class="controls">
+      <input id="persona" placeholder="persona（如：calm, helpful）" />
+      <label>
+        <input type="checkbox" id="enableSearch" /> 联网搜索
+      </label>
+    </div>
+    <div class="chat">
+      <div id="messages" class="messages"></div>
+      <div class="input-row">
+        <input id="text" placeholder="输入消息…" />
+        <button id="send">发送</button>
+        <button id="mic">🎤</button>
+      </div>
+    </div>
+
+    <div class="history-search">
+      <input id="histq" placeholder="搜索历史…" />
+      <button id="histbtn">搜索</button>
+      <div id="histres" class="histres"></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
